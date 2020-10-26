@@ -7,13 +7,13 @@
  | |____| | (_| | |_| | | (_| |____) |  __/ (__| |_| | |  | | |_| |  __/\__ \
  |______|_|\__, |\__,_|_|\__,_|_____/ \___|\___|\__,_|_|  |_|\__|_|\___||___/
               | |
-              |_|    Demo Liquid POS
+              |_|    Demo Blockstream AMP POS
 
  This is an examples of POS terminal using GDK, python and M5Stack board.
              DON'T USE THIS CODE IN PRODUCTION
 ```
 
-M5stack based POS for Liquid Securities tokens.
+M5stack based POS for Blockstream AMP tokens.
 
 - http.server is not ready for a production service
 - we don't show how to add a tls certificate
@@ -37,7 +37,7 @@ Run the script adding the port number as argument.
 
 - `/status` return always a static message
 - `/assets` return the list of accepted assets
-- `/gaid` return Liquid Securities account GAID
+- `/gaid` return Blockstream AMP account GAID
 - `/balance` return the balance of subaccount, if `asset` argument is passed return the balance of the selected asset, if not pass the list of known assets
 - `/check` check if a payment is performed if the argument `pointer` is passed (and print information using the thermal printer) or return the list of payment requests
 - `/address` return an address an save request payment (`name`, `asset`, `amount` arguments can be passed on url)
