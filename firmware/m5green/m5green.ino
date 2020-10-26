@@ -233,7 +233,7 @@ void setup() {
 }
 
 void loop() {
-  ezMenu mainmenu("Liquid Securities");
+  ezMenu mainmenu("Blockstream AMP");
   mainmenu.txtSmall();
   mainmenu.addItem("Balance", balance);
   mainmenu.addItem("Receive payment", receivepayment);
