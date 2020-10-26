@@ -5,7 +5,7 @@
 # | |____| | (_| | |_| | | (_| |____) |  __/ (__| |_| | |  | | |_| |  __/\__ \
 # |______|_|\__, |\__,_|_|\__,_|_____/ \___|\___|\__,_|_|  |_|\__|_|\___||___/
 #              | |
-#              |_|    Demo Liquid POS
+#              |_|    Demo Blockstream AMP POS
 #
 # This is an examples of POS terminal using GDK, python and M5Stack board.
 #             DON'T USE THIS CODE IN PRODUCTION
@@ -41,7 +41,7 @@ p = None # no printer
 # Your green liquid mnemonic
 GDK_MNEMONIC = ''
 
-# Name of your liquid securities subaccount in the wallet
+# Name of your Blockstream AMP subaccount in the wallet
 GDK_SUBACCOUNT = 'Liquid Securities Account'
 
 # Local name for your wallet
@@ -187,7 +187,7 @@ class POSHandler(http.server.SimpleHTTPRequestHandler):
                             if p:
                                 p.set(align='center', width=2, height=2)
                                 p.image('./logo.png')
-                                p.text('LIQUID SECURITIES POS')
+                                p.text('Blockstream AMP POS')
                                 p.text('\n')
                                 p.text('\n')
                                 p.text('\n')
@@ -245,7 +245,7 @@ class POSHandler(http.server.SimpleHTTPRequestHandler):
                 if p:
                     p.set(align='center', width=2, height=2)
                     p.image('./logo.png')
-                    p.text('LIQUID SECURITIES POS\n')
+                    p.text('BLOCKSTREAM AMP POS\n')
                     p.text('Requests\n\n\n')
                     for request in wallet['requests']:
                         name = request['name']
@@ -301,7 +301,7 @@ if __name__ == "__main__":
         ' | |____| | (_| | |_| | | (_| |____) |  __/ (__| |_| | |  | | |_| |  __/\\__ \\\n' +
         ' |______|_|\\__, |\\__,_|_|\\__,_|_____/ \\___|\\___|\\__,_|_|  |_|\\__|_|\\___||___/\n' +
         '              | |\n'
-        '              |_|    Demo Liquid POS\n\n' +
+        '              |_|    Demo Blockstream AMP POS\n\n' +
         ' This is an examples of POS terminal using GDK, python and M5Stack board.\n' +
         '            DON\'T USE THIS CODE IN PRODUCTION\n'
     )
